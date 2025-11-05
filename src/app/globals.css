@@ -1,3 +1,5 @@
+/* stylelint-disable */
+/* Allow Tailwind directives and PostCSS/PostCSS-At-Rules features in this file */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,6 +28,11 @@
 
   * {
     border-color: rgba(242, 242, 242, 0.1);
+  }
+
+  /* Ensure the Home nav link stays neutral when other global rules set anchor color */
+  a[data-nav="home"], [data-nav="home"] {
+    color: #E0E0E0;
   }
 
   body {
